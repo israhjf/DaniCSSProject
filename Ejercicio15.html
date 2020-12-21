@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio15</title>
+</head>
+<body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    p {
+      padding: 5px;
+      background-color: brown;
+      border-radius: 3px;
+      color: white;
+      font-size: 16px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <input id="inputN">
+  <button id="btn">Generar matriz</button>
+  <h1>Matrix de Pascal</h1>
+  <div id="matrixCont"></div>
+  <script type="text/javascript">
+    function createPascalMatrix(size) {
+      let matrix = []
+      for (let i = 0; i < size; i++) {
+        let row = []
+        for (let j = 0; j < size; j++) {
+          if (j <= i) {
+            if (j == 0) {
+              row.push(1)
+            } else {
+              row.push(matrix[i-1][j] + matrix[i-1][j - 1])
+            }
+          } else {
+            row.push(0)
+          }
+        }
+        matrix.push(row)
+      }
+      return matrix
+    }
+    function createTableString(matrix) {
+      let tableStr = "<table>"
+      for (let i = 0; i < matrix.length; i++) {
+        tableStr += "<tr>"
+        for (let j = 0; j < matrix.length; j++) {
+          tableStr += "<td><p>" + matrix[i][j] + "</p></td>"
+        }
+        tableStr += "</tr>"
+      }
+      tableStr += "</table>"
+      return tableStr
+    }
+    const inputValue = document.querySelector('#inputN')
+    const button = document.querySelector('#btn')
+    const matrixCont = document.querySelector('#matrixCont')
+    button.addEventListener('click', function() {
+      let number = parseInt(inputValue.value)
+      if (isNaN(number)) {
+        alert('Ingrese un numero valido')
+        return
+      }
+      if (number < 0) {
+        alert('Ingrese un numero positivo')
+        return
+      }
+      const matrix = createPascalMatrix(inputValue.value)
+      const matrixStr = createTableString(matrix)
+      matrixCont.innerHTML = matrixStr
+    }
+  </script>
+</body>
+</html>                                                                                                                                                     
+
+
+

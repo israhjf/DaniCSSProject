@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio3</title>
+		<script language="javascript" type="text/javascript">
+		function GeneracionFacto(argument) {
+			// body...
+		
+		n1=document.formu.op1.value
+        n=parseInt(n1);
+		var s=0;
+		document.writeln("La serie factorial es: ")
+		for(i=1;i<=n;i++){
+           var f=1;
+           for(j=1;j<=i;j++){
+           	f=f*j;
+           }
+           s=s+f;
+           document.writeln(f);
+       }
+       document.write("<br>la sumatoria de la serie factorial es: ")
+       document.write(s);
+
+
+}
+
+
+
+	</script>
+
+</head>
+<body>
+	<h1 align="center">Generacion de factoriales</h1>
+	<form action="" name="formu" method="get">
+		<table width="" border="1" align="center">
+		  <tr>
+			<td rowspan="3" ><input type="button" name="calculo" onclick="GeneracionFacto();" value="GeneracionFacto"></br></td>
+		  </tr>
+		  <tr>
+		    <td><input type="text" name="op1"></td>	
+		   </tr>
+
+				
+	
+	</table>
+</form>
+	
+</body>
+</html>

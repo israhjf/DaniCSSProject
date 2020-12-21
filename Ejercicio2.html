@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio2SerieBinaria</title>
+	<script language="javascript" type="text/javascript">
+	  function Binario(argument) {
+	  	n1=document.formu.op1.value
+        n=parseInt(n1);
+        document.writeln("La serie binaria es: ")
+        for(i=1;i<=n;i++){
+	  	document.writeln(i.toString(2));
+	  	document.writeln(",")
+
+	  }
+	  }
+	 
+
+	</script>
+</head>
+  
+<body>
+<h1 align="center">Serie binaria n</h1>
+	<form action="" name="formu" method="get">
+		<table width="" border="1" align="center">
+		  <tr>
+			<td rowspan="3" ><input type="button" name="calculo" onclick="Binario();" value="Binario"></br></td>
+		  </tr>
+		  <tr>
+		    <td><input type="text" name="op1"></td>	
+		   </tr>
+
+				
+	
+	</table>
+</form>
+</html>

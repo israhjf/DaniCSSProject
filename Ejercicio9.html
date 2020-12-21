@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio9</title>
+	<script language="javascript" type="text/javascript">
+	function VectorFibo() {
+		n1=document.formu.op1.value
+        n=parseInt(n1);
+	var i;
+	var fib = []; // Initialize array!
+
+	fib[0] = 0;
+	fib[1] = 1;
+	document.writeln("el vector fibonacci es:" )
+	for (i = 2; i <= n; i++) {
+  // Next fibonacci number = previous + one before previous
+  // Translated to JavaScript:
+  	fib[i] = fib[i - 2] + fib[i - 1];
+  	document.writeln(fib[i]);
+		}
+	}
+
+
+
+	</script>
+</head>
+<body>
+	<h1 align="center">VectorFibonacci</h1>
+	<form action="" name="formu" method="get">
+		<table width="" border="1" align="center">
+		  <tr>
+			<td rowspan="3" ><input type="button" name="calculo" onclick="VectorFibo();" value="VectorFibo"></br></td>
+		  </tr>
+		  <tr>
+		    <td><input type="text" name="op1"></td>	
+		   </tr>
+	
+
+</body>
+</html>

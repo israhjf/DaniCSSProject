@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ejercicio8</title>
+	<script language="javascript" type="text/javascript">
+		function GenerarNumerosPrimos() {
+		n1=document.formu.op1.value
+        n=parseInt(n1);
+
+		var c = 1;
+		var p = 2;
+		var d = 2;
+		document.writeln("La serie n primo es:")
+		while(c<=n){
+			if(p%d==0){
+				if(p==d){
+					document.writeln(p)
+					c=c+1;
+				}
+				d=2;
+				p=p+1;
+			}else{
+				d=d+1;
+			}
+		}
+	}
+
+
+</script>
+</head>
+<body>
+	<h1 align="center">Genererar N numeros Primos</h1>
+	<form action="" name="formu" method="get">
+		<table width="" border="1" align="center">
+		  <tr>
+			<td rowspan="3" ><input type="button" name="calculo" onclick="GenerarNumerosPrimos();" value="GenerarNumerosPrimos"></br></td>
+		  </tr>
+		  <tr>
+		    <td><input type="text" name="op1"></td>	
+		   </tr>
+	
+
+</body>
+</html>

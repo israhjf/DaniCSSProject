@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio6</title>
+</head>
+<body>
+  <h1 align="center">Verificar si un numero N es Capicua</h1>
+  <table align="center">
+    <tr>
+      <td align="center">
+<script language="javascript" type="text/javascript">
+
+     //Definimos un metodo para el tipo de datos "string", que lo unico que hace es devolver nuestra palabra en orden inverso.
+    String.prototype.reverse=function(){return this.split("").reverse().join("");}
+
+   function testCapCua(word) {
+   
+    
+    //Una vez definido, ya lo tenemos practicamente hecho.
+    var inverseWord = word.reverse();
+
+    if (word == inverseWord) { //Si la palabra es igual a la palabra girada.
+     alert("El numero '"+word+"' Si es capicua");
+     return(true); //Es capicua/palindromo.
+    }
+    else {
+     alert("El numero '"+word+"' No es capicua '"+inverseWord+"'");
+     return(false); //NO es capicua/palindromo.
+    } 
+   } 
+  </script>
+ </head>
+ 
+ <body>
+  <input type="text" placeholder="Introducir Numero" id="input-word" />
+  <input type="button" onclick="testCapCua(document.getElementById('input-word').value)" value="Comprobar"/>
+</script>	
+</td>
+</tr>
+
+</table>	
+</body>
+</html>

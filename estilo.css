@@ -1,0 +1,181 @@
+a:link, #menu a:visited {
+  color: #0f0202;
+  text-decoration: none;
+}
+a:hover {
+	background-color: #104e8b;
+  } 
+  
+a:hover {background: #FFCC00; font-weight:bold; color: red;}
+table, th, td, tr {
+	border: 1px solid #808080;
+	border-collapse: collapse;
+	background-image: linear-gradient(cadetblue, rgb(233, 234, 240));
+}
+th, td {
+	padding: 0px;
+	text-align: center;
+}
+TD{font-family: 'Courier New', Courier, monospace; font-size: 12pt;}
+
+div.TOPHEADER{
+	position:absolute;
+	height: 24%;
+	width: 98%;
+	visibility:visible;
+	background-image: url(banner_lab4.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: black;
+	border:5 ;
+	border-style: groove;
+	border-color: cadetblue;
+
+}
+div.MENU1{
+    position: absolute;
+	top:26%;
+	background-color: black;
+	border:5 ;
+	border-style: groove;
+	border-color: cadetblue;
+	left: 0%;
+	width: 15%;
+	font-family: 'Courier New', Courier, monospace;
+	margin:7px;
+    padding:5px;
+
+}
+div.CENTER{
+  	position:absolute;
+	top:27%;
+	left: 18%;
+	width: 63.5%;
+	visibility:visible;
+	border:1;
+	border-style: groove;
+	border-color: cadetblue;
+	background-image: linear-gradient(black, rgb(233, 234, 240));
+	background-image: url('night_sky.jpg');
+}
+div.MENU2{
+	position: absolute;
+	top:26%;
+	background-color: rgb(196, 237, 238);
+	border:5 ;
+	border-style: groove;
+	border-color: cadetblue;
+	left: 82.5%;
+	width: 15%;
+	font-family: 'Courier New', Courier, monospace;
+	margin:7px;
+	padding:5px;
+	
+}
+div.FOOTER{
+position: absolute;
+    top:117%;
+	left: 0%;
+	height: 24%;
+	width: 98%;
+	border: 5;
+	border-style: groove;
+	border-color: cadetblue;
+	margin:7px;
+    padding:5px;
+}    
+
+
+
+.button {
+	background-color: #8C6D09;
+	color: white;
+	padding: 16px 25px;
+	display:inline-block;
+	margin:4px 2px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;	
+}
+	 
+.button1{
+   background-color:#8C6D09;
+	color:#FFF;    	
+}
+
+#ejercicio1
+{
+	background-color: lightblue;
+	display:none;
+}
+
+#ejercicio2
+{
+	background-color: lightblue;
+	display:none;
+}
+
+#ejercicio3
+{
+	background-color: lightblue;
+	display:none;
+}
+
+#ejercicio6
+{
+	background-color: lightblue;
+	display:none;
+}
+
+#ejercicio7
+{
+	background-color: lightblue;
+	display:none;
+}
+
+#ejercicio8
+{
+	background-color: lightblue;
+	display:none;
+}
+
+#ejercicio9
+{
+	background-color: lightblue;
+	display:none;
+}
+
+#ejercicio10
+{
+	background-color: lightblue;
+	display:none;
+}
+
+#ejercicio11
+{
+	background-color: lightblue;
+	display:none;
+}
+
+#ejercicio12
+{
+	background-color: lightblue;
+	display:none;
+}
+
+#ejercicio13
+{
+	background-color: lightblue;
+	display:none;
+}
+
+#ejercicio14
+{
+	background-color: lightblue;
+	display:none;
+}
+
+#ejercicio15
+{
+	background-color: lightblue;
+	display:none;
+}

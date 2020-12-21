@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Serie 1</title>
+	<script language="javascript" type="text/javascript">
+		function Serie1(argument) {
+		n1=document.formu.op1.value
+        n=parseInt(n1);//es para llenar n tomando a la variable n1 de la ventanita;
+		var a=0;
+		var b=1
+		document.writeln("La serie es: "+"<br>")
+		for (i =0; i < n ; i++) {
+			document.writeln(a +",");
+			var c= a+b;
+			a=b;
+			b=c; 
+
+		}
+	}
+	</script>
+
+
+</head>
+<body>
+	<h1 align="center">Serie1</h1>
+	<form action="" name="formu" method="get">
+		<table width="" border="1" align="center">
+		  <tr>
+			<td rowspan="3" ><input type="button" name="calculo" onclick="Serie1();" value="Serie1"></br></td>
+		  </tr>
+		  <tr>
+		    <td><input type="text" name="op1"></td>	
+		   </tr>
+
+				
+	
+	</table>
+	</form>
+</body>
+</html>

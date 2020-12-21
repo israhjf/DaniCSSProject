@@ -1,0 +1,111 @@
+<html>
+<head>
+	<title>Ejercicio13Calculadora</title>
+	<script language="javascript" type="text/javascript">
+		function suma(){
+			n1=document.formu.op1.value;
+			n2=document.formu.op2.value;
+			
+			a=parseFloat(n1);	
+			b=parseFloat(n2);
+			s=a+b;
+			
+			document.formu.re.value=s;
+		}
+		function resta(){
+            n1=document.formu.op1.value;
+			n2=document.formu.op2.value;
+			
+			a=parseFloat(n1);	
+			b=parseFloat(n2);
+			r=a-b;
+			
+			document.formu.re.value=r;
+
+
+		}		
+		function producto(){
+            n1=document.formu.op1.value;
+			n2=document.formu.op2.value;
+			
+			a=parseFloat(n1);	
+			b=parseFloat(n2);
+			p=a*b;
+			
+			document.formu.re.value=p;
+
+
+		}
+		function divicion(){
+
+        n1=document.formu.op1.value;
+			n2=document.formu.op2.value;
+			
+			a=parseFloat(n1);	
+			b=parseFloat(n2);
+			d=a/b;
+			
+			document.formu.re.value=d;
+         }
+
+        	function facto() {
+        		 n1=document.formu.op1.value;
+        		 a=parseFloat(n1);
+	 f = 1; 
+	for (var i=1; i<=a; i++) {
+		f = f * i; 
+	}
+	
+	document.formu.re.value=f;
+        }
+        function Potencia() {
+        	n1=document.formu.op1.value;
+			n2=document.formu.op2.value;
+			
+			a=parseFloat(n1);	
+			b=parseFloat(n2);
+			var r=1;
+			for(var i=1;i<=b;i++){
+				r=r*a;
+			}	
+			
+			document.formu.re.value=r;
+        }
+
+
+
+         
+	</script>
+</head>
+<body>
+	<h1 align="center">Calculadora</h1>
+	<form action="" name="formu" method="get">
+		<table width="" border="1" align="center">
+		  <tr>
+			<td rowspan="3" ><input type="button" name="calculo" onclick="suma();" value="Suma"><input type="button" name="calculo" onclick="resta();" value="Resta"></br>
+				<input type="button" name="calculo" onclick="producto();" value="producto">
+				<input type="button" name="calculo" onclick="divicion();" value="divicion">
+				<input type ="button" name="calculo" onclick="facto()" value="Factorial">
+				<input type ="button" name="calculo" onclick="Potencia()" value="potencia">
+				</td>
+			<td>X</td>
+			<td><input type="text" name="op1"></td>
+		  </tr>
+		  <tr>
+			<td>Y</td>
+			<td><input type="text" name="op2"></td>
+		  </tr>
+		  <tr>
+			<td>Res</td>
+			<td><input type="text" name="re"></td>
+		  </tr>
+		</table>
+
+	
+
+	</form>
+
+
+
+</body>
+</html>
